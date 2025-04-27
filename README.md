@@ -10,10 +10,20 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 5.	Stop the program.
 
 ## PROGRAM
+```
+
+#include<stdio.h>
+int main(){
+    int a=44;
+    a=a<<3;
+    printf("After Left Shift Operation value of a is:%d",a);
+}
+```
 
 ## OUTPUT
 
 
+![Screenshot (289)](https://github.com/user-attachments/assets/929ad9fd-c79f-46d8-8846-37199dd4c039)
 
 
 
