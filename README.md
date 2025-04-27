@@ -47,9 +47,28 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if (a==b)
+    {
+        printf("Number1 and Number2 are equal");
+    }
+    else
+    {
+        printf("Number1 and Number2 are not equal");
+    }
+}
+
+```
 
 
 ## OUTPUT
+![Screenshot (276)](https://github.com/user-attachments/assets/8332bc34-e2b8-4298-8e53-53b6a85110b3)
+
            
 ## RESULT
 
@@ -70,8 +89,25 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char str[100];
+    int i;
+    scanf("%s", str);
+    for (i = 0; str[i] != '\0'; i++) {
+        str[i] = tolower(str[i]);
+    }
+    printf("Lower case String is:%s\n", str);
+
+    return 0;
+}
+```
 
 ## OUTPUT
+![Screenshot (278)](https://github.com/user-attachments/assets/68a7027c-4de2-4c54-b49a-58de189da120)
 
 
 
@@ -95,10 +131,26 @@ Write a C Program to count the total number of words in a given string using do 
 6.	Stop the program.
 
 ## PROGRAM
+```
+#include<stdio.h>
+int main()
+{
+    char a[100];
+    int l=0;
+    fgets(a,sizeof(a),stdin);
+    while(a[l]!='\0')
+    {
+        l++;
+    }
+    printf("%d",l-1);
+    return 0;
+}
+```
 
 ## OUTPUT
 
 
+![Screenshot (280)](https://github.com/user-attachments/assets/e46980f7-dc3a-4546-8dd9-2e5059b2552d)
 
 
 
@@ -129,7 +181,22 @@ Step 7: After the loop, check the value of flag:
 Step 8: End the program.
 
 ## PROGRAM
-
+```
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char str1[100], str2[100];
+    scanf("%s", str1);
+    scanf("%s", str2);
+    if (strcmp(str1, str2) == 0) {
+        printf("strings are same\n");
+    } 
+    else {
+        printf("strings are not same\n");
+    }
+    return 0;
+}
+```
 
 ## OUTPUT
  
